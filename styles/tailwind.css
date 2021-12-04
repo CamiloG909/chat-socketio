@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-text-light {
+	@apply outline-none bg-soft-white p-2 border-[1px] border-off-white w-full rounded-md transition-all duration-300 hover:border-borders-light mb-3 focus:border-green focus:shadow-input-text
+}
+
+.input-text {
+	@apply outline-none bg-dark-gray p-2 text-white border-[1px] border-dark-gray w-full rounded-md transition-all duration-300 hover:border-borders focus:border-green focus:shadow-input-text
+}
+
+.btn-green {
+	@apply border-[1px] border-soft-green bg-green w-[100px] h-[42px] rounded-md text-white font-bold transition-all duration-300 hover:bg-dark-green hover:border-green active:border-dark-green select-none
+}
+
+.btn-red {
+	@apply border-[1px] border-soft-red bg-red w-full rounded-md text-white font-bold py-[10px] transition-all duration-300 hover:bg-dark-red hover:border-red active:border-dark-red select-none
+}
+
+.btn-blue {
+	@apply border-[1px] border-soft-blue bg-blue w-full rounded-md text-white font-bold py-[10px] transition-all duration-300 hover:bg-dark-blue hover:border-blue active:border-dark-blue select-none
+}
+
