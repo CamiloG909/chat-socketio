@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node src/index",
     "dev": "nodemon src/index",
     "dev:styles": "TAILWIND_MODE=watch postcss ./styles/tailwind.css -o ./styles/styles.css -w --verbose",
     "dist:styles": "NODE_ENV=production postcss ./styles/tailwind.css -o ./styles/styles.css"
@@ -19,6 +20,7 @@
     "tailwindcss": "^2.2.19"
   },
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.17.1",
     "nodemon": "^2.0.15",
     "socket.io": "^4.4.0"

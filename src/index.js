@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+require("dotenv").config();
 
 const path = require("path");
 
@@ -22,6 +23,8 @@ app.get("/", (req, res) => {
 
 app.use(express.static(path.resolve(__dirname, "../styles")));
 
-server.listen(4000, () => {
-	console.log("listening on port 4000");
+const PORT = process.env.PORT || 4000;
+
+server.listen(PORT, "0.0.0.0", () => {
+	console.log("listening on port " + PORT);
 });
